@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Authentic colors from allenkays.github.io */
+  --brand-orange: #ff4500;
+  --brand-dark: #172b4d;
+  --brand-slate: #344563;
+  --brand-light: #f4f5f7;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--brand-dark);
+  background-color: #fff;
+  /* Improves font rendering for a "cleaner" look */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Selection color (when user highlights text) */
+::selection {
+  background-color: var(--brand-orange);
+  color: white;
 }
