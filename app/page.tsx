@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Mail, ExternalLink, Menu, Contact } from 'lucide-react'; // Keep general icons here
+import { Mail, ExternalLink, Menu, Contact, X } from 'lucide-react'; // Keep general icons here
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Use Fa for Brands
 import { FaX } from 'react-icons/fa6';
 //import { SiGithub, SiX } from '@icons-pack/react-simple-icons'; // Get brand icons here
