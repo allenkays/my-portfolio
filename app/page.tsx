@@ -8,18 +8,20 @@ import { FaX } from 'react-icons/fa6';
 
 const projects = [
   {
-    title: "Multi-Post Stories",
+    title: "School Management System",
     subtitle: "Gain+ Programme",
     tags: ["Html", "Tailwinds CSS", "Django"],
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard dummy text ever since the 1500s."
+    description: "A comprehensive school management system designed to streamline administrative tasks, enhance communication between teachers, students, and parents, and provide a centralized platform for managing academic records, attendance, and scheduling.",
+    link: "https://kajiado-adventist-school.vercel.app/"
   },
   {
-    title: "Professional Art Printing Data",
-    subtitle: "Data Visualization",
+    title: "Facial Recognition Web App",
+    subtitle: "Face Recognition",
     tags: ["Html", "Tailwinds CSS", "Python"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard."
+    description: "A facial recognition web application that uses machine learning algorithms to identify and verify individuals in images based on their facial features. It provides a secure and efficient way to authenticate users in various applications.",
+    link: "https://github.com/allenkays/Face-x"
   }
 ];
 
@@ -108,7 +110,9 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <button className="flex items-center gap-2 px-6 py-3 bg-[#ff4500] text-white font-bold rounded-lg hover:bg-[#e63e00] transition-all active:scale-95">
-                    See Project <ExternalLink size={18} />
+                    <a href={p.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      See Project <ExternalLink size={18} />
+                    </a>
                   </button>
                 </div>
               </div>
@@ -126,13 +130,15 @@ export default function Portfolio() {
               Hello I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
             </p>
             <button className="px-8 py-4 bg-[#ff4500] text-white font-bold rounded hover:shadow-lg hover:shadow-orange-500/30 transition-all">
-              Get my resume
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                Get my resume
+              </a>
             </button>
           </div>
           
           <div className="md:w-1/2 grid gap-6">
             {[
-              { title: "Languages", skills: "JavaScript, Python, HTML, CSS", color: "bg-[#ff4500]" },
+              { title: "Languages", skills: "JavaScript, Python, TypeScript, Golang", color: "bg-[#ff4500]" },
               { title: "Frameworks", skills: "Next.js, Django, React", color: "bg-[#172b4d]" },
               { title: "Skills", skills: "Database Management, Version Control, CLI", color: "bg-[#607d8b]" }
             ].map((cat, i) => (
