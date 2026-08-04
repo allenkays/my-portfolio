@@ -130,7 +130,7 @@ export default function Portfolio() {
               Hello I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
             </p>
             <button className="px-8 py-4 bg-[#ff4500] text-white font-bold rounded hover:shadow-lg hover:shadow-orange-500/30 transition-all">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/Allan-Sang-SE-Resume.pdf" target="_blank" rel="noopener noreferrer">
                 Get my resume
               </a>
             </button>
